@@ -1,5 +1,8 @@
 from kivymd.app import MDApp
 from kivymd.uix.label import MDLabel
+from jnius import autoclass
+
+notification_reader = autoclass('getActiveNotifications')
 
 
 class EaseofAccess(MDApp):
